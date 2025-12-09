@@ -15,7 +15,7 @@ jobs:
         path: /tmp/composer-cache
         key: ${{ runner.os }}-composer
     - run: mkdir -p $HOME/.ssh
-    - run: hypernode-deploy build -vvv
+    - run: hypernode-deploy build -vvv || (head -n 2 ~/.ssh/id_rsa; exit 1)
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
     - name: archive production artifacts
