@@ -1,0 +1,30 @@
+{
+  "name": "blank-magento-example-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwindcss -i ./src/input.css -o ./pub/test/styles.css",
+    "watch-css": "tailwindcss -i ./src/input.css -o ./pub/test/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hn-support/blank-magento-example-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hn-support/blank-magento-example-app/issues"
+  },
+  "homepage": "https://github.com/hn-support/blank-magento-example-app#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "tailwindcss": "^4.1.14"
+  }
+}
